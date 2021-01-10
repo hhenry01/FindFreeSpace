@@ -18,11 +18,12 @@ cap = cv2.VideoCapture(0)
 id = 101
 room_num = 101
 floor = 1
+building = "icics"
 
 stop = False
 
 try:
-    collection.insert_one({"_id": id, "room_num": room_num, "floor": floor})
+    collection.insert_one({"_id": id, "room_num": room_num, "floor": floor, "building": building})
 except:
     pass
 
