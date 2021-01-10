@@ -64,7 +64,7 @@ while True:
     if stop or cv2.waitKey(1) == 27: 
         break
     
-print(result)
+    print(result)
     
 # Release the VideoCapture object
 cap.release()
