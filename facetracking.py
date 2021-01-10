@@ -53,8 +53,8 @@ while True:
 
         # Stop if escape key is pressed
         if cv2.waitKey(1) == 27:
-            break
             stop = True
+            break
 
     result = statistics.mode(countList)
     
