@@ -19,9 +19,10 @@ id = 101
 room_num = 101
 stop = False
 
-collection.insert_one({"_id": id, "room_num": room_num})
+if not collection.find({"_id": id}):
+    collection.insert_one({"_id": id, "room_num": room_num})
 
-while true:
+while True:
     # Prep processing
     startInterval = time.time()
     countList = []
